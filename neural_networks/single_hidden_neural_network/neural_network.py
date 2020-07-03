@@ -185,11 +185,3 @@ def predict(parameters, X, threshold=0.5):
     A2[A2 < threshold] = 0
     A2[A2 >= threshold] = 1
     return A2 # predictions
-
-
-# Predict classes for given examples
-def predict(parameters, X, threshold=0.5):
-    A2, cache = forward_propagation(X, parameters)
-    A2[A2 < threshold] = 0
-    A2[A2 >= threshold] = 1
-    return A2 # predictions
